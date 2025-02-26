@@ -24,11 +24,8 @@ pip3 install -r requirements.txt
 To run decision boundary analyzer, run:
 
 ```
-python3 descision_boundary_analysis.py --config ./rd_assesment.yaml
+python3 descision_boundary_analysis.py --config ./db_analysis.yaml
 ```
 
 This will load the trained model, computes the umap embeddings on the ASVspood 2019 LA eval subset, and generates the umap visualization in viusalization directory. This will also generates a csv file which contains all the results. 
 
-### SAMPLE ANALYSIS AND INTERPRETATION
-
-Use model_interpretation.ipynb notebook for model interpretation and generating plots.

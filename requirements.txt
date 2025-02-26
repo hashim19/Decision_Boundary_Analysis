@@ -1,0 +1,16 @@
+torch>=1.6.0
+torchcontrib
+numpy
+soundfile
+tensorboard
+packaging
+pandas
+pyaml
+tqdm
+scikit-learn
+umap-learn
+plotly
+kaleido
+matplotlib
+ipykernel
+librosa
