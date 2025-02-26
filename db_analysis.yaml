@@ -1,4 +1,4 @@
-model_path: "./exp_result/LA_rd_assesment_ep100_bs24_rd_asses_sampled/weights/swa.pth"
+model_path: ""
 score_dir: "./Score_Files"
 eval_output: "eval_scores.txt"
 

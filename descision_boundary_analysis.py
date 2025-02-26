@@ -16,7 +16,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
 
-from main import get_model, get_loader
+from model_utils import get_model, get_loader
 
 class DescisionBoundaryAnalyzer:
     def __init__(self, model, device='cuda', feature_name='assist_rd_assessment'):
