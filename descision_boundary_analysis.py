@@ -239,8 +239,8 @@ if __name__ == "__main__":
     # prefix_2019 = "ASVspoof2019_{}".format(track)  
     
     pf_filename = data_config["protocol_filename"]
-    eval_pf = os.path.join(data_config["database_path"], 'flac')
-    eval_db_path = os.path.join(data_config["database_path"], 'protocols', pf_filename)
+    eval_pf = os.path.join(data_config["database_path"], 'protocols', pf_filename)
+    eval_db_path = os.path.join(data_config["database_path"], 'flac') 
 
     device = "cuda:1"
     feature_name = 'baseline'
