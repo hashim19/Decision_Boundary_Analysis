@@ -2,10 +2,9 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from torchcontrib.optim import SWA
+from typing import Dict, List, Union
 
 from data_utils import (Dataset_ASVspoof2019_train, Dataset_ASVspoof2019_devNeval, genSpoof_list)
-from evaluation import calculate_tDCF_EER
-from model_utils import create_optimizer, seed_worker, set_seed, str_to_bool
 
 from importlib import import_module
 
