@@ -234,15 +234,16 @@ if __name__ == "__main__":
     data_config = config["data_config"]  
 
     # define the database paths and protocol files
-    track = data_config["track"]
-    assert track in ["LA", "PA", "DF"], "Invalid track given"
-    prefix_2019 = "ASVspoof2019_{}".format(track)  
+    # track = data_config["track"]
+    # assert track in ["LA", "PA", "DF"], "Invalid track given"
+    # prefix_2019 = "ASVspoof2019_{}".format(track)  
     
-    eval_pf = os.path.join(data_config["database_path"], "{}_eval_subset.tsv".format(track))
-    eval_db_path = os.path.join(data_config["database_path"], "{}_eval_subset".format(prefix_2019))
+    pf_filename = data_config["protocol_filename"]
+    eval_pf = os.path.join(data_config["database_path"], 'flac')
+    eval_db_path = os.path.join(data_config["database_path"], 'protocols', pf_filename)
 
     device = "cuda:1"
-    feature_name = 'assist_rd_assessment'
+    feature_name = 'baseline'
 
     model = get_model(model_config, device)
 
